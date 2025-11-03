@@ -1,0 +1,12 @@
+\frametitle{Python + C Code}
+\begin{verbatim}
+# Take user input
+print("Enter coefficients of first equation (a1 b1 c1): ")
+a1, b1, c1 = map(float, input().split())
+
+print("Enter coefficients of second equation (a2 b2 c2): ")
+a2, b2, c2 = map(float, input().split())
+
+# Call the C function
+solve_from_c(a1, b1, c1, a2, b2, c2)
+    \end{verbatim}
